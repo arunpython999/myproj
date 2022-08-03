@@ -29,7 +29,7 @@ class Creating(View):
             res["status"] = True
             res["data"] = {"id": theatres.id, "name": theatres.name, "no_of_seats": theatres.no_of_seats,
                            "ac": theatres.ac}
-            res["msg"] = "success"
+            res["m/home/administratorsg"] = "success"
             res['welcome'] = ["welcome", theatres.name]
         except Exception as e:
             print(e)
@@ -86,6 +86,7 @@ class Ac_Fetch(View):
         return HttpResponse(str(res) )
 
 # class Ac_city(View):
+#  commented function
 #     def post(self, request):
 #         res = {
 #             "status": False,
